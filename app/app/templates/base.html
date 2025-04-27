@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lablan Technologies</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Lablan Logo" height="80">
+        <h1>Lablan Technologies</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Lablan Technologies</p>
+    </footer>
+</body>
+</html>
